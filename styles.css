@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Noto+Sans+Duployan:wght@400;700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #75f62f;
+    --secondary: rgb(50, 100, 19);
+    --font1: #303030;
+    --font2: rgba(19, 19, 19, 0.979);
+    --white: #fff;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background: var(--primary);
+    background: linear-gradient(0deg, var(--primary) 0%, var(--secondary) 100%);
+    font-family: "Noto Sans Duployan", sans-serif;
+
+    @media(max-width: 300px) {
+        font-size: 10px;
+    }
+
+}
+
+.container {
+    color: var(--font1);
+
+    .banner {
+        img {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+        }
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .card {
+        max-width: 30em;
+        width: 100%;
+        background: white;
+        margin: auto;
+        border-radius: 1.5em;
+        overflow: hidden;
+        position: relative;
+        margin-top: -8em;
+
+        .header {
+            width: 100%;
+            height: auto;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            text-align: center;
+
+
+            img {
+                margin-top: 2em;
+                width: 12em;
+                height: 12em;
+                border-radius: 50%;
+                border: .4em solid var(--primary);
+            }
+
+            h2 {
+                font-size: 1.3em;
+                font-weight: 300;
+            }
+        }
+
+        .contacts {
+            width: 100%;
+            height: auto;
+            padding: 1em;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                text-align: center;
+
+                li {
+                    margin-bottom: .3em;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            padding: 1em;
+
+            a {
+                display: block;
+                width: 100%;
+                height: auto;
+                background: var(--primary);
+                padding: 1em;
+                margin-bottom: .8rem;
+                color: var(--font2);
+                text-decoration: none;
+                border-radius: .8em;
+                text-align: center;
+            }
+        }
+    }
+}
